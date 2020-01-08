@@ -30,6 +30,9 @@ footer {
   position: relative;
   overflow: hidden;
   background-color: #9de0ad;
+  text-align: center;
+  font-size: 1em;
+  padding: 20px 0;
   align-items: center;
   align-content: center;
 }
