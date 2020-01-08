@@ -1,1 +1,1 @@
-# quizdecks
+# quizdeck
