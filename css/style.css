@@ -16,10 +16,19 @@ footer {
   flex-shrink: 0;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  color: #594f4f;
+}
+
 h1 {
   text-align: center;
-  font-size: 4em;
   color: #547980;
+  font-size: 4em;
 }
 
 footer {
@@ -31,51 +40,63 @@ footer {
   text-align: center;
 }
 
-#cardArea {
-  display: flex;
-  width: 300px;
-  height: 200px;
-  margin: auto;
-  margin-top: 80px;
-  border: 3px solid #594f4f;
-  color: #594f4f;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  background-color: #9de0ad;
+.flip-container {
+  perspective: 1000px;
+}
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
 }
 
-.card {
-  width: 300px;
-  height: 200px;
+.flipper {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip-container,
+.card-front,
+.card-back {
   position: absolute;
-  text-align: center;
-  line-height: 200px;
-  font-size: 45px;
-  text-align: center;
-  /* font-size: 1em; */
-  padding: 20px 0;
-  align-items: center;
-  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 200px;
 }
 
-#buttonArea {
-  display: flex;
-  height: 20px;
-  width: 30%;
-  margin: auto;
-  padding: 3px;
-  position: relative;
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  color: #594f4f;
+  background-color: #9de0ad;
+  border: 3px solid #594f4f;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 25px;
+}
+
+.card-front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
 }
 
 .button {
+  display: flex;
   text-align: center;
   font-size: 16px;
   padding: 10px;
   color: #fff;
   margin: auto;
   margin-top: 30px;
-  background-color: darkred;
+  /* background-color: darkred; */
+  background-color: #45ada8;
   border: 2px solid #594f4f;
   border-radius: 5px;
 }
@@ -84,4 +105,17 @@ footer {
   text-align: center;
   font-size: 30px;
   margin-top: 30px;
+}
+
+.flex-row-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.flex-row-container > .flex-row-item {
+  flex-grow: 1;
+  flex: 1 1 30%;
 }
