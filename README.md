@@ -29,3 +29,5 @@ Currently the dataset is pre-loaded into a JS array; when I add the upload featu
 If I have time (after coding all the minimum requirements), I'd like to add the ability to upload your own dataset, and also add a back end. I did spend some time researching this. With Github Pages, you cannot host a back end, but there is a web service called Glitch which I will eventually incorporate into this project. Glitch hosting is free, and I can use a file-based database such as sqlite3-db or low-db to store the data. More info here:
 https://glitch.com/@storage
 
+## Resources
+* https://bitsofco.de/holy-grail-layout-css-grid/
