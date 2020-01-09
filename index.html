@@ -16,11 +16,15 @@
       <h1>quizdecks</h1>
     </header>
 
-    <body>
-      <div id="cardArea"></div>
-      <div id="buttonArea"></div>
-    </body>
-    <footer>&copy 2020 Michelene Chon</footer>
+    <div id="cardArea"></div>
+    <div id="buttonArea">
+      <button class="button" id="prev" onclick="prevCard()">
+        Previous Card
+      </button>
+      <button class="button" id="flip" onclick="flip()">Flip Card</button>
+      <button class="button" id="next" onclick="nextCard()">Next Card</button>
+    </div>
+    <footer>&copy; 2020 Michelene Chon</footer>
     <script src="data/data.js"></script>
     <script src="lib/script.js"></script>
   </body>
