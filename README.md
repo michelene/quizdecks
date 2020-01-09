@@ -30,5 +30,5 @@ If I have time (after coding all the minimum requirements), I'd like to add the 
 https://glitch.com/@storage
 
 ## Resources
-* https://bitsofco.de/holy-grail-layout-css-grid/
+* https://css-tricks.com/books/volume-i/holy-grail-layout-5-lines-css/
 * https://davidwalsh.name/css-flip
