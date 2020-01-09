@@ -2,36 +2,39 @@ html,
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #e5fcc2;
+  text-align: center;
+  color: #594f4f;
   width: 100%;
   height: 100%;
 }
 
-main {
-  flex-grow: 1;
+body {
+  display: grid;
+  grid-template-rows: 100px auto 150px;
+  grid-template-columns: 200px auto 150px;
 }
 
 header,
-main,
 footer {
-  flex-shrink: 0;
+  grid-column-end: span 3;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: center;
-  color: #594f4f;
+main {
+  grid-column-start: 2;
 }
 
-h1 {
-  text-align: center;
-  color: #547980;
-  font-size: 4em;
+.sidebar-left {
+  grid-column: 1;
+  grid-row-start: 2;
+  padding: 20px;
 }
 
-footer {
+.sidebar-right {
+  grid-column-start: 3;
+  padding: 20px;
+}
+
+/* footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -39,6 +42,27 @@ footer {
   color: #547980;
   text-align: center;
 }
+
+.button {
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  color: #fff;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #45ada8;
+  border: 2px solid #594f4f;
+  border-radius: 5px;
+}
+
+#finalMessage {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+*/
 
 .flip-container {
   perspective: 1000px;
@@ -85,37 +109,4 @@ footer {
 
 .card-back {
   transform: rotateY(180deg);
-}
-
-.button {
-  display: flex;
-  text-align: center;
-  font-size: 16px;
-  padding: 10px;
-  color: #fff;
-  margin: auto;
-  margin-top: 30px;
-  /* background-color: darkred; */
-  background-color: #45ada8;
-  border: 2px solid #594f4f;
-  border-radius: 5px;
-}
-
-#finalMessage {
-  text-align: center;
-  font-size: 30px;
-  margin-top: 30px;
-}
-
-.flex-row-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  min-height: 300px;
-}
-
-.flex-row-container > .flex-row-item {
-  flex-grow: 1;
-  flex: 1 1 30%;
 }

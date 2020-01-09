@@ -17,21 +17,23 @@
     </header>
     <main>
       <h3>(Hover over the card to flip)</h3>
-      <div class="flex-row-container">
-        <button class="button" id="prev">Previous</button>
-        <div class="flip-container">
-          <div class="flipper">
-            <div class="card-front">
-              <!-- front -->
-            </div>
-            <div class="card-back">
-              <!-- back -->
-            </div>
-          </div>
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
         </div>
-        <button class="button" id="next">Next</button>
       </div>
     </main>
+    <aside class="sidebar-left">
+      Quizdecks is a simple app written in Javascript/HTML/CSS. It is
+      self-scoring; after reviewing each card, click on either the 'Correct' or
+      'Incorrect' button. Incorrect answers will be repeated until they are
+      marked correct.
+    </aside>
+    <aside class="sidebar-right">
+      <button class="button" id="prev">Previous</button>
+      <button class="button" id="next">Next</button>
+    </aside>
     <footer>&copy; 2020 Michelene Chon</footer>
     <script src="data/data.js"></script>
     <script src="lib/script.js"></script>
