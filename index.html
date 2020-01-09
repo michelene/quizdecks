@@ -14,9 +14,12 @@
   <body>
     <header>
       <h1>quizdecks</h1>
+      <p class="italic">
+        A simple app written in Javascript/HTML/CSS.
+      </p>
     </header>
     <main>
-      <h3>(Hover over the card to flip)</h3>
+      <p class="bold">(Hover over the card to flip)</p>
       <div class="flip-container">
         <div class="flipper">
           <div class="card-front"></div>
@@ -24,16 +27,23 @@
         </div>
       </div>
     </main>
-    <aside class="sidebar-left">
-      Quizdecks is a simple app written in Javascript/HTML/CSS. It is
-      self-scoring; after reviewing each card, click on either the 'Correct' or
-      'Incorrect' button. Incorrect answers will be repeated until they are
-      marked correct.
-    </aside>
-    <aside class="sidebar-right">
-      <button class="button" id="prev">Previous</button>
-      <button class="button" id="next">Next</button>
-    </aside>
+    <div class="sidebar-left">
+      <p>
+        quizdecks is self-scoring.
+      </p>
+      <p>
+        After reviewing each card, click on either the 'Correct' or 'Incorrect'
+        button.
+      </p>
+      <p>
+        Incorrect answers will be repeated until the 'Correct' button is clicked
+        for it.
+      </p>
+    </div>
+    <div class="sidebar-right">
+      <button class="button" id="incorrect">My answer was incorrect</button>
+      <button class="button" id="correct">My answer was correct</button>
+    </div>
     <footer>&copy; 2020 Michelene Chon</footer>
     <script src="data/data.js"></script>
     <script src="lib/script.js"></script>
