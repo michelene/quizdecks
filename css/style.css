@@ -24,8 +24,11 @@ footer {
 header {
   grid-row: 1;
   margin: 0px 10px 20px 10px;
+  padding: 0px 0px 5px 0px;
   border: 2px solid #594f4f;
   border-radius: 5px;
+  background-color: #594f4f;
+  color: #e5fcc2;
 }
 
 h1 {
@@ -61,13 +64,22 @@ main {
   padding: 20px;
 }
 
-.button {
+.button-correct,
+.button-incorrect {
   color: #e5fcc2;
-  background-color: #45ada8;
+  background-color: #9de0ad;
   border: 2px solid #594f4f;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
+}
+
+.button-correct {
+  color: green;
+}
+
+.button-incorrect {
+  color: red;
 }
 
 .score {
@@ -105,7 +117,7 @@ main {
   backface-visibility: hidden;
   color: #594f4f;
   background-color: #9de0ad;
-  border: 3px solid #594f4f;
+  border: 5px solid #594f4f;
   border-radius: 5px;
   text-align: center;
   font-size: 2em;
