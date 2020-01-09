@@ -18,14 +18,6 @@
         A simple app written in Javascript/HTML/CSS.
       </p>
     </header>
-    <main>
-      <div class="flip-container">
-        <div class="flipper">
-          <div class="card-front"></div>
-          <div class="card-back"></div>
-        </div>
-      </div>
-    </main>
     <div class="sidebar-left">
       <p>
         quizdecks is self-scoring.
@@ -39,7 +31,21 @@
       </p>
       <p>(Hover over the card to flip)</p>
     </div>
-    <div class="button-column">
+    <main>
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+      </div>
+    </main>
+    <div class="score">
+      There are total cards.
+      <br />
+      You have answered correctly.
+    </div>
+
+    <div class="sidebar-right-1">
       <button class="button" id="correct">My answer was correct</button>
       <button class="button" id="incorrect">My answer was incorrect</button>
     </div>
