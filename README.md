@@ -21,9 +21,11 @@ I did most of the actual coding for this app on Wednesday. I knew the Javascript
 
 I struggled with placing the page elements in their correct positions via CSS. (Eventually, I ended up redoing the entire page layout using CSS Grid.) As I was working on the CSS, I knew I wanted to incorporate CSS animations. So, I researched and found out how to animate a card flip triggered by mouseover. The bonus of using this animation is that I was able to eliminate the 'flip' button and associated logic altogether. 
 
-Then realizing the spec required me to keep a score, I changed the 'Previous' and 'Next' buttons to be 'Correct' and 'Incorrect'. The spec also wanted me to redisplay the missed cards, so I used the 'splice' command to rewrite the data array in-place after each choice. (An alternative way to code this might be to use a linked list for the dataset, but 'splice' simplifies the code, making it a single-line op.)
+Then realizing the spec required me to keep a score, I changed the 'Previous' and 'Next' buttons to be 'Correct' and 'Incorrect'. The spec also wanted me to redisplay the missed cards, so I used the 'splice' command to rewrite the (working copy of the) data array in-place after each choice. (An alternative way to code this might be to use a linked list for the dataset, but 'splice' simplifies the code, making it a single-line op.)
 
 The 'reset' button re-copies the static data array into the working array, using 'slice'.
+
+Rather than using 'location.reload()' to reset the deck, I instead use the initalize() function, which surgically updates the 3 areas of the page which need updated, and also resets the global variables.
 
 
 ## Data persistence and data upload
