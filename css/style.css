@@ -149,7 +149,7 @@ main {
 @media (min-width: 1000px) {
   body {
     display: grid;
-    grid-template-rows: 25fr 30fr 20fr 25fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 1rem;
   }
