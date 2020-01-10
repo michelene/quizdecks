@@ -8,25 +8,22 @@ body {
 
 body {
   display: grid;
-  grid-template-rows: 25% 45% 20% 10%;
-  grid-template-columns: 30% 45% 25%;
-  width: 90%;
-  height: 100%;
+  grid-template-rows: 25% 50% 20% 5%;
+  grid-template-columns: 25% 50% 25%;
   margin: 0px 10px 0px 10px;
 }
 
 header,
 footer {
   grid-column-end: span 3;
-  /* padding: 5px; */
 }
 
 header {
   grid-row: 1;
   margin: 0px 10px 20px 10px;
-  /* padding: 0px 0px 5px 0px; */
-  border: 2px solid #594f4f;
-  border-radius: 5px;
+  padding: 5px;
+  border: 4px solid #45ada8;
+  border-radius: 7px;
   background-color: #594f4f;
   color: #e5fcc2;
 }
@@ -45,19 +42,21 @@ main {
   grid-row: 2;
 }
 
+.tip,
 .score {
   grid-column: 2;
   grid-row: 3;
   margin: 5px;
   padding: 0 10px 0 0;
-  text-align: right;
+  text-align: center;
 }
 
 .sidebar-left {
   grid-column: 1;
   grid-row-start: 2;
   padding: 0 20px 0 20px;
-  border: 1px solid #594f4f;
+  border: 3px solid #45ada8;
+  border-radius: 5px;
 }
 
 .sidebar-right-1 {
@@ -69,7 +68,7 @@ main {
 .button-incorrect {
   color: #e5fcc2;
   background-color: #9de0ad;
-  border: 2px solid #594f4f;
+  border: 2px solid #45ada8;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
@@ -116,21 +115,24 @@ main {
 .card-front,
 .card-back {
   backface-visibility: hidden;
-  color: #594f4f;
-  background-color: #9de0ad;
-  border: 5px solid #594f4f;
-  border-radius: 5px;
   text-align: center;
   font-size: 2em;
   padding-top: 25px;
+  border-radius: 7px;
 }
 
 .card-front {
   transform: rotateY(0deg);
+  color: #e5fcc2;
+  background-color: #45ada8;
+  border: 5px solid #594f4f;
 }
 
 .card-back {
   transform: rotateY(180deg);
+  color: #45ada8;
+  background-color: #594f4f;
+  border: 5px solid #45ada8;
 }
 
 .italic {
