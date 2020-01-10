@@ -58,6 +58,7 @@ main {
   padding: 20px;
 }
 
+.button-reset,
 .button-correct,
 .button-incorrect {
   color: #e5fcc2;
@@ -66,6 +67,7 @@ main {
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
+  width: 150px;
 }
 
 .button-correct {
@@ -76,6 +78,10 @@ main {
   color: red;
 }
 
+.button-reset {
+  color: #547980;
+  border: 2px solid #45ada8;
+}
 .score {
   margin-top: 30px;
 }
