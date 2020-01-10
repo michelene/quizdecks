@@ -35,13 +35,22 @@ main {
   grid-row: 2;
 }
 
-.tip,
-.score {
+.score-area {
   grid-column: 2;
   grid-row: 3;
-  margin: 5px;
-  padding: 0 10px 0 0;
+  /* margin: 5px; */
+  /* padding: 0 10px 0 0; */
   text-align: center;
+}
+
+.tip,
+.score,
+.win {
+  margin: 5px;
+}
+
+.win {
+  color: red;
 }
 
 .sidebar-left {
@@ -81,9 +90,6 @@ main {
 .button-reset {
   color: #547980;
   border: 2px solid #45ada8;
-}
-.score {
-  margin-top: 30px;
 }
 
 .flip-container {
@@ -142,7 +148,7 @@ main {
 @media (min-width: 1000px) {
   body {
     display: grid;
-    grid-template-rows: 25fr 50fr 20fr 5fr;
+    grid-template-rows: 25fr 30fr 20fr 25fr;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 1rem;
   }
