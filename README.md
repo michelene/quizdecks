@@ -23,11 +23,13 @@ I struggled with placing the page elements in their correct positions via CSS. (
 
 Then realizing the spec required me to keep a score, I changed the 'Previous' and 'Next' buttons to be 'Correct' and 'Incorrect'. The spec also wanted me to redisplay the missed cards, so I used the 'splice' command to rewrite the data array in-place after each choice. (An alternative way to code this might be to use a linked list for the dataset, but 'splice' simplifies the code, making it a single-line op.)
 
+The 'reset' button re-copies the static data array into the working array, using 'slice'.
+
 
 ## Data persistence and data upload
-Currently the dataset is pre-loaded into a JS array which is read once when the page is loaded. When I add the upload feature I will be converting this to JSON, so that the user can upload a JSON file.
+Currently there is a static dataset, pre-loaded into a JS array which is read once when the page is loaded. 
 
-Eventually I will add the ability to upload your own dataset, which will require a back end. I did spend some time researching this. With Github Pages, you cannot host a back end, but there is a web service called Glitch which I will eventually incorporate into this project. Glitch hosting is free, and I can use a file-based database such as sqlite3-db or low-db to store the data. More info here:
+Eventually I will add the ability to upload your own dataset, which will require a back end. When I add the upload feature  the user can upload a data file in JSON format. With Github Pages, you cannot host a back end, but there is a web service called Glitch which I will eventually incorporate into this project. Glitch hosting is free, and I can use a file-based database such as sqlite3-db or low-db to store the data. More info here:
 https://glitch.com/@storage
 
 ## Resources
